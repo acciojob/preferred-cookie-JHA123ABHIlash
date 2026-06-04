@@ -11,5 +11,7 @@ form.addEventListener('submit',(e)=>{
 	document.cookie=`fontsize=${size}`;
 	document.cookie=`fontcolor=${color}`;
 
+document.documentElement.style.setProperty("--fontsize", size)
+document.documentElement.style.setProperty("--fontcolor", color)
 	
 })
